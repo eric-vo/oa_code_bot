@@ -76,7 +76,7 @@ async def contact(interaction: discord.Interaction):
     embed.add_field(
         name="Discord",
         value=("<:discord:1019079092995362867> " +
-               "https://is.gd/oacodediscord"),
+               "[is.gd/oacodediscord](https://is.gd/oacodediscord)"),
         inline=False
     )
 

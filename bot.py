@@ -23,16 +23,16 @@ intents.members = True
 # Create client with intents and set up slash commands
 client = discord.Client(intents=intents)
 tree = app_commands.CommandTree(client)
-# commands_synced = False
+commands_synced = False
 
 
 @client.event
 async def on_ready():
     print(f"We have logged in as {client.user}")
-    # global commands_synced
-    # if not commands_synced:
-    #     await tree.sync(guild=discord.Object(id=GUILD_ID))
-    #     commands_synced = True
+    global commands_synced
+    if not commands_synced:
+        await tree.sync(guild=discord.Object(id=GUILD_ID))
+        commands_synced = True
 
 
 @client.event

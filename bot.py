@@ -98,8 +98,8 @@ async def contact(interaction: discord.Interaction):
 
     await interaction.response.send_message(embed=embed)
 
-@tree.command()(description="Displays the next meeting date for OA Code.", 
-                guild = discord.Object(id=GUILD_ID))
+@tree.command(description="Displays the next meeting date for OA Code.", 
+                guild =discord.Object(id=GUILD_ID))
 async def nextmeeting(interaction: discord.Interaction):
     embed = discord.Embed(
         color=discord.Color.blue(),

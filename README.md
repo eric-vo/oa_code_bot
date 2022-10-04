@@ -1,2 +1,4 @@
-<h1>OA Code Discord Bot</h1>
-<p>Written in Python for the OA Code Discord server.</p>
+# OA Code Discord Bot
+**To contribute, make a fork, edit the code, and make a pull request.**  
+  
+Written in Python for the OA Code Discord server.

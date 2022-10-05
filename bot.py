@@ -99,19 +99,22 @@ async def contact(interaction: discord.Interaction):
     await interaction.response.send_message(embed=embed)
 
 @tree.command(description="Displays the next meeting date for OA Code.", 
-                guild =discord.Object(id=GUILD_ID))
+              guild=discord.Object(id=GUILD_ID))
 async def nextmeeting(interaction: discord.Interaction):
     embed = discord.Embed(
         color=discord.Color.blue(),
         title="Next Meeting",
-        description="Our next meeting is on **September 14th, 2022** at **during lunch**.",
+        description="Our next meeting is on "+
+                    "**September 14th, 2022** **during lunch**.",
     )
 
     embed.set_thumbnail(url=logo_square_url)
 
     embed.add_field(
         name="Meeting",
-        value=("We will be meeting on **September 14th, 2022** **during lunch**. We will go over the basics of python."),
+        value=("We will be meeting on " +
+               "**September 14th, 2022** **during lunch**. " +
+               "We will be going over the basics of Python."),
         inline=False
     )
 
